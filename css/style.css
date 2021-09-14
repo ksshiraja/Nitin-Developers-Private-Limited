@@ -1,0 +1,502 @@
+@font-face {
+	src:url(..//fonts/Corporative_Alt_W00_Book.ttf);
+	font-family: corporative;
+	}
+
+@font-face {
+	src:url(..//fonts/Philosopher-Regular.ttf);
+	font-family: premiero;
+	}
+	
+
+
+* /*universal selector*/, html, body
+{
+	margin:0;
+	padding:0;
+}
+
+
+.site-header
+{
+	background-color: #373737;
+	height: 95px;
+	line-height: 50px;  /*height of the line in the header*/
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	box-shadow: 0px 0px 17px 0px;
+}
+
+header nav ul li a /* individual menu elements*/
+{
+	padding-right: 30px;
+	color: #f4f4f4;
+	font-size: 15px;
+	font-weight: bold;
+	
+}
+
+header nav ul li a:hover
+{
+	text-decoration: none;
+	color: #c0b283;
+	transition: all 0.5s ease-in;	
+}
+
+.img1 /* first sliding image*/
+{	margin-top: -20px; /*removes the white line*/
+	background-image: radial-gradient(rgba(0,0,0,.2),rgba(0,0,0,0.8)),url(..//image/SOCORRO/soc.jpg); /*to make it transition opaque linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,0.7)),url......*/
+	background-size: 100% 100%;
+
+
+}
+
+.img2 /*second sliding image */
+{	margin-top: -20px;/*removes the white line*/
+	background-image: radial-gradient(rgba(0,0,0,.2),rgba(0,0,0,0.8)),url(..//image/dauna.jpg); /*to make it transition opaque linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,0.7)),url......*/
+	background-size: 100% 100%;
+
+}
+
+.img3/* third sliding image*/
+{	margin-top: -20px;/*removes the white line*/
+	background-image: radial-gradient(rgba(0,0,0,.2),rgba(0,0,0,0.8)),url(..//image/cg.jpeg); /*to make it transition opaque linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,0.7)),url......*/
+	background-size: 100% 100%;
+
+}
+
+.slider,.slider ul,.slider ul li /* slider as a whole how much space it occupies etc*/
+{	
+	width: 100%;
+	text-align: center;
+	margin-top: 0;
+}
+
+
+.img1 h2{ /* socorro heading*/
+	font-weight: bold;
+	font-family: corporative; 
+	color: #f4f4f4;
+	font-size: 50px;
+
+}
+
+.img2 h2{ /* premiero*/
+	font-weight: bold;
+	font-family: premiero; 
+	color: #f4f4f4;
+	font-size: 70px;
+
+}
+
+.img3 h2{/* corlim heading */
+	font-weight: bold;
+	font-family: corporative; 
+	color: #f4f4f4;
+	font-size: 50px;
+
+}
+ 
+.img1 p /* provorim */
+{
+	font-weight: bold;
+	font-family: corporative; 
+	color: #f4f4f4;
+	font-size: 35px;
+}
+.img2 p /* dauna paula*/
+{
+	font-weight: bold;
+	font-family: premiero; 
+	color: #f4f4f4;
+	font-size: 35px;
+}
+.img3 p /* corlim */
+{
+	font-weight: bold;
+	font-family: corporative; 
+	color: #f4f4f4;
+	font-size: 35px;
+}
+
+
+.introAboutUs { /*entire about us box */
+	position: relative;
+	padding: 30px 0px;
+	text-align: center;
+	background: #f4f4f4;
+	margin-top: -20px;
+
+}
+
+/* for the fancy line */
+.sub-heading
+{
+	position: relative;
+	margin-bottom: 75px;
+
+}
+
+.sub-heading:before
+{
+	content:"";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -3%;
+	width:6%;
+	height: 1px;
+	background-color: black;
+	z-index: 1;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	transition: 0.3s ease;
+
+}
+
+.sub-heading:hover:before
+{
+	width: 24%;
+	margin-left: -12%;
+}
+
+.sub-heading:after /*puts the line after the text and puts the grey line*/
+{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -12%;
+	width: 24%;
+	height: 1px;
+	background-color: #e1e1e1;
+}
+
+.sub-heading p
+{
+	color: #373737;
+	font-size: 15px;
+	display: inline-block;
+	padding: 0px 0px 20px;
+	position: relative;
+	line-height: 24px;
+	letter-spacing: 0.025em;
+}
+
+/* fancy line ends*/
+
+/*Know More button*/
+.introAboutUs .knowMore
+{
+	font-size: 14px;
+	color: #373737; /*icon color*/ 
+	background: #f4f4f4;
+	box-shadow: 0px 0px 0px 1px black;
+	padding:10px;
+	margin-bottom: 100px;
+}
+
+.introAboutUs .knowMore:hover
+{
+	text-decoration:none;
+	font-weight:bold;
+	transition: all 0.5s ease-in;	
+}
+
+.introProjects /* for the entire project box background silk */
+{
+	padding-top: 60px;
+	background-color: #ffcc3f;
+}
+
+.dummytext {
+	color: #373737;
+}
+
+.boxes /* top and bottom make black and spacing etc*/
+{
+	margin-top: -40px; /* change space between indi boxes and para */
+	padding-bottom: 100px; /* increase box bottom and make black*/
+
+}
+
+/* individual box edit*/
+.project-block /* */
+{
+position: relative;
+background: #6eb6be;
+margin: 50px 0px 0px;
+text-align: center;
+padding: 70px 25px 40px;  
+
+}
+
+.project-block:hover, .project-block.active
+{
+background: #387277;
+}
+
+.project-block:hover
+{
+transition: 0.6s ease;
+-webkit-transition: 0.6s ease;
+-moz-transition: 0.6s ease;
+-ms-transition: 0.6s ease;
+-o-transition: 0.6s ease;
+}
+
+
+.project-block .intro-icon
+{
+	position: absolute;
+	top: -31px;
+	left: 50%;
+	margin-left: -31px;
+}
+
+.project-block .fas
+{
+	width: 63px;
+	height: 63px;
+	font-size: 30px;
+	color: #373737; /*icon color*/ 
+	line-height: 2;
+	background: #ffcc3f;
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px 10px #6eb6be; /*circle color*/
+
+}
+
+.project-block:hover .fas, .project-block.active .fas
+{
+	background:#ffcc3f;
+	color: #373737;
+	box-shadow: 0px 0px 0px 10px #387277;
+
+}
+
+.project-block a:hover
+{
+	text-decoration: none;
+}
+
+.project-block h3
+{
+	font-size: 18px;
+	color:#373737;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 15px; /*space between h3 (residential) and p (dummy) */
+
+}
+
+.project-block p
+{
+	color: #373737;
+}
+
+.project-block:hover h3, .project-block:hover p
+{
+	text-decoration: none;
+	color: #373737;
+}
+
+
+/* individual boxes end*/
+
+/* fancy line*/
+.line
+{
+	position: relative;
+	margin-bottom: 75px;
+
+}
+
+.line:before
+{
+	content:"";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -3%;
+	width:6%;
+	height: 1px;
+	background-color: #373737;
+	z-index: 1;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	transition: 0.3s ease;
+
+}
+
+.line:hover:before
+{
+	width: 24%;
+	margin-left: -12%;
+}
+
+.line:after /*puts the line after the text and puts the grey line*/
+{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -12%;
+	width: 24%;
+	height: 1px;
+	background-color:#6eb6be;
+}
+
+.line p
+{
+	color: #818181;
+	display: inline-block;
+	padding: 0px 0px 20px;
+	position: relative;
+	line-height: 24px;
+	letter-spacing: 0.025em;
+}
+
+/* fancy line end*/
+
+.aboutGoa-area
+{
+	padding-top: 50px;
+	padding-bottom: 100px;
+	background:#f4f4f4;
+}
+
+/*For about goa title and subheading we are using the default subheading colours.
+ if we want different colours than our motto, add the code here*/
+
+ .image-responsive
+ {
+ 	width: 700px;
+ 	margin-left: -50px;
+
+ }
+
+ .feature-list ul
+ {
+ 	list-style: none;
+ 	margin-left: 30px;
+ }
+
+ .feature-list li
+ {
+ 	position: relative;
+ 	margin-bottom: 30px;
+ 	padding-left: 80px;
+ }
+
+ .feature-list li:hover i
+ {
+ 	color: #373737;
+ 	background: #387277;
+ 	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+
+ }
+ 
+ .feature-icon
+ {
+ 	position: absolute;
+ 	left: 0;
+ }
+
+.feature-icon i
+{
+	width: 63px;
+	height: 63px;
+	text-align: center;
+	font-size: 30px;
+	background: #6eb6be;
+	color: #373737;
+	border-radius: 50%;
+	border: 2px #6eb6be;
+	line-height: 63px;
+}
+
+
+.feature-details h3
+{
+	color: #373737;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.feature-details p
+{
+	color:#373737;
+	font-weight: 100px;
+	font-size: 12px;
+}
+
+.contact-area
+{
+	background-color: #ffcc3f;
+	color: #373737;
+	padding: 60px 0px;
+}
+
+
+.contact-area h3
+{
+	text-transform: uppercase;
+	margin-bottom: 18px;
+}
+
+.contact-area h4
+{
+	color: #373737;
+	font-weight: 700;
+	text-transform: capitalize;
+	margin-bottom: 4px;
+	letter-spacing: 0.025em;
+}
+
+.contact-area p
+{
+	display: block;
+	color: #373737;
+	font-size: 15px;
+	line-height: normal;
+	letter-spacing: 0.025em;
+}
+
+.contact-icon
+ {
+ 	position: absolute;
+ 	left: 0;
+ }
+
+.contact-icon i
+{
+	width: 63px;
+	height: 63px;
+	text-align: center;
+	font-size: 30px;
+	background: #373737;
+	color: #ffcc3f;
+	border-radius: 50%;
+	border: 2px #373737;
+	line-height: 63px;
+}
+
+.contact-block
+{
+	padding-left: 25px;
+}
+
+.copyright
+{
+	height: 12%;
+}

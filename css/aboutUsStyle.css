@@ -1,0 +1,157 @@
+@font-face {
+	src:url(..//fonts/Corporative_Alt_W00_Book.ttf);
+	font-family: corporative;
+	}
+
+* /*universal selector*/, html, body
+{
+	margin:0;
+	padding:0;
+}
+
+.site-header
+{
+	background-color: #373737;
+	height: 95px;
+	line-height: 50px;  /*height of the line in the header*/
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	box-shadow: 0px 0px 17px 0px;
+}
+
+header nav ul li a /* individual menu elements*/
+{
+	padding-right: 30px;
+	color: #f4f4f4;
+	font-size: 15px;
+	font-weight: bold;
+	
+}
+
+header nav ul li a:hover
+{
+	text-decoration: none;
+	color: #c0b283;
+	transition: all 0.5s ease-in;	
+}
+
+/*About us starting*/
+h2
+{
+	text-align: center;
+	font-size: 40px;
+
+}
+
+.heading-area
+{
+	padding-top: 120px;
+	color: black;
+}
+
+.line
+{	text-align: center;
+	position: relative;
+
+}
+
+
+
+.line:before
+{
+	content:"";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -3%;
+	width:6%;
+	height: 1px;
+	background-color: black;
+	z-index: 1;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	transition: 0.3s ease;
+
+}
+
+.line:hover:before
+{
+	width: 24%;
+	margin-left: -12%;
+}
+
+.line:after /*puts the line after the text and puts the grey line*/
+{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -12%;
+	width: 24%;
+	height: 1px;
+	background-color: #e1e1e1;
+}
+
+.line p
+{
+	color: #818181;
+	display: inline-block;
+	padding: 0px 0px 20px;
+	position: relative;
+	line-height: 24px;
+	letter-spacing: 0.025em;
+}
+
+
+/* fancy line end*/
+
+.body-para
+{
+	padding-top:50px;
+	padding-left: 60px;
+	padding-right: 60px;
+	text-align: center;
+	font-size:18px;
+	line-height: 1.5;
+}
+
+.space
+{
+	padding-top: 50px;
+	padding-left: 60px;
+	padding-right: 60px;
+	margin-bottom: 50px;
+}
+
+.space h2
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+ 
+.team li
+{
+	width: 31%; 
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    vertical-align: top;
+}
+
+
+.supp-body-para
+{
+	margin-top: -50px;
+}
+
+
+
+
+
+
+
